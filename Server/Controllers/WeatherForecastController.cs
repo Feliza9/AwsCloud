@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using BlazorWasmAuth0.Shared;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BlazorWasmAuth0.Server.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
